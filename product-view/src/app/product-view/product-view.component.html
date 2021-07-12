@@ -1,0 +1,33 @@
+
+  
+
+<div class="col-sm-7" >
+  <div class="panel panel-primary">
+  <div class="panel-heading set-bgcolor"><h1><span>Product Listing</span></h1></div>
+  <div class="panel-body fixed-panel">
+    <div class='table-responsive'>
+        <table class='table'>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Code</th>
+                <th>Price</th>
+                <th>Available</th>   
+                <th></th>           
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of productlist"> 
+                <td>{{product.productname}}</td>
+                <td>{{product.code}}</td>
+                <td>{{product.price | currency: 'USD' :true: '1.2-2'}}</td>
+                <td>{{product.available - product.qty}}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</div>
+</div>
+<!--<iframe [src]="ordercartUrl" id="ordercard" class="fixed-iframe" frameBorder="0" ></iframe>-->

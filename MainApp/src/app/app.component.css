@@ -1,0 +1,11 @@
+.fixed-panel {
+    height: 450px;
+    width: 550px;
+    text-align: center;
+    scroll-behavior: auto;    
+   }
+.fixed-iframe {
+    height: 450px;
+    width: 350px;
+    background-color: darkgray;
+   }
